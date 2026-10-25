@@ -1,0 +1,71 @@
+BlakiBridge Freeware License
+Version 1.0 — 25 October 2026
+Copyright (c) 2026 Blakiukas. All rights reserved except as granted below.
+Contact: blaki.support@gmail.com
+
+1. Free use
+You may install, run and make backup copies of BlakiBridge free of charge,
+for any lawful personal, educational or business purpose, on any number
+of computers. Using the program in paid work is permitted.
+
+2. Free redistribution
+You may share exact, unmodified copies of the official distribution free
+of charge, keeping this license, all copyright notices and all third-party
+license and notice files. You must identify Blakiukas as the author and
+must not claim authorship or endorsement. Do not add advertising software,
+trackers or other software to the distribution.
+
+3. No sale
+You may not sell, rent, lease, sublicense for payment, charge for access
+to, or include BlakiBridge as part of a paid software bundle. This does
+not prevent using BlakiBridge as a tool in your business or paid work.
+
+4. Closed-source program
+This license grants permission to use and redistribute the executable
+program as stated above; it does not grant access to its source code or
+permission to distribute modified versions. Rights not expressly granted
+are reserved. Nothing here restricts rights that applicable law requires,
+including any mandatory rights concerning interoperability or examination
+of software.
+
+5. Third-party components
+Included components, including .NET and installer components, are governed
+by their own licenses. See THIRD-PARTY-NOTICES.txt and the accompanying
+license files. Those licenses prevail for their respective components;
+the restrictions in this license do not limit rights independently granted
+by those third-party licenses. This is not an open-source license for
+BlakiBridge itself.
+
+6. Warranty and liability
+To the extent permitted by applicable law, the program is supplied "as is"
+and "as available", without warranties of merchantability, fitness for a
+particular purpose or uninterrupted or error-free operation. To that same
+extent, the author is not liable for loss or damage arising from use or
+inability to use the program. No provision excludes or limits liability
+that cannot lawfully be excluded or limited, including mandatory consumer
+rights and applicable liability for intentional misconduct, gross
+negligence, personal injury or defective products. Updates and support
+are not guaranteed.
+
+7. Acceptance and scope
+By installing, using or redistributing the program, you agree to these
+terms to the extent an agreement is required by applicable law. If you do
+not agree, do not install, use or redistribute it. Mandatory law and
+applicable platform terms remain unaffected. If a provision is invalid,
+the remaining provisions continue to apply as far as legally possible.
+
+Lietuviška santrauka (pagrindinis tekstas — anglų kalba)
+Programa nemokama asmeniniam naudojimui ir darbui. Galima nemokamai
+platinti nepakeistą oficialų paketą, išlaikant autorystę ir licencijas.
+Negalima parduoti programos ar įtraukti jos į mokamą programų rinkinį.
+Naudoti programą mokamam darbui galima. Kodas lieka uždaras. Trečiųjų
+šalių komponentams taikomos jų licencijos. Garantijų ir atsakomybės
+apribojimai galioja tik tiek, kiek leidžia įstatymai.
+
+Краткое изложение на русском (основной текст — английский)
+Программа бесплатна для личного использования и работы. Разрешено
+бесплатно распространять неизменённый официальный пакет с сохранением
+авторства и лицензий. Нельзя продавать программу или включать её в
+платный набор программ. Использование в оплачиваемой работе разрешено.
+Исходный код закрыт. Для сторонних компонентов действуют их лицензии.
+Ограничения гарантий и ответственности действуют только в пределах закона.

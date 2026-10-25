@@ -1,0 +1,30 @@
+BlakiBridge 1.0.3 — third-party software
+
+BlakiBridge's freeware license applies to BlakiBridge's own code, not to
+independently licensed components. Those components retain their own
+permissions, notices, warranty disclaimers and copyright holders.
+
+Microsoft.NETCore.App.Runtime.win-x64 10.0.10
+  DOTNET-RUNTIME-LICENSE.txt — unchanged LICENSE.TXT from the runtime pack
+  DOTNET-RUNTIME-NOTICES.txt — unchanged THIRD-PARTY-NOTICES.TXT from the pack
+  Source: https://www.nuget.org/packages/Microsoft.NETCore.App.Runtime.win-x64/10.0.10
+
+Microsoft.WindowsDesktop.App.Runtime.win-x64 10.0.10
+  DOTNET-DESKTOP-LICENSE.txt — unchanged LICENSE from the runtime pack
+  DOTNET-WINFORMS-NOTICES.txt — notices from dotnet/winforms tag v10.0.10
+  DOTNET-WPF-NOTICES.txt — notices from dotnet/wpf tag v10.0.10
+  Source: https://www.nuget.org/packages/Microsoft.WindowsDesktop.App.Runtime.win-x64/10.0.10
+  https://github.com/dotnet/winforms/tree/v10.0.10
+  https://github.com/dotnet/wpf/tree/v10.0.10
+
+The self-contained distribution includes the Windows desktop runtime.
+Notice files may describe components not exercised by this application.
+
+Inno Setup 6.7.3 (Setup distribution only)
+  INNO-SETUP-LICENSE.txt — unchanged compiler distribution license
+  https://jrsoftware.org/
+  Used to create the installer; its existing embedded notices are retained.
+
+No additional direct NuGet PackageReference dependencies are declared by
+BlakiBridge 1.0.3. Windows APIs and operating-system components are supplied
+by Windows and are not relicensed by BlakiBridge.
