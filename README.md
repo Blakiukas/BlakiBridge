@@ -1,14 +1,20 @@
 # BlakiBridge
 
+[English](README.md) | [Lietuvių](README.lt.md) | [Русский](README.ru.md)
+
 Smooth mouse pointer transitions between monitors of different sizes and resolutions.
 
-**Free Windows app · English / Lietuvių / Русский · Windows 10 (2004+) and Windows 11, x64**
+**Free Windows app · Windows 10 (2004+) / Windows 11 · x64 · EN / LT / RU**
 
-[Microsoft Store](https://apps.microsoft.com/detail/9NL5F77NL75W) · [Downloads](https://github.com/Blakiukas/BlakiBridge/releases) · [Support](mailto:blaki.support@gmail.com)
+## Download
 
-![BlakiBridge monitor layout](01-layout.png)
+**[Download Setup (.exe)](https://github.com/Blakiukas/BlakiBridge/releases/download/untagged-79c2d0bc459b26e6e25c/BlakiBridge-1.0.3-Setup.exe)** · **[Download Portable (.zip)](https://github.com/Blakiukas/BlakiBridge/releases/download/untagged-79c2d0bc459b26e6e25c/BlakiBridge-1.0.3-Portable-x64.zip)** · **[Microsoft Store](https://apps.microsoft.com/detail/9NL5F77NL75W)**
 
-## English
+[1.0.3 · Release notes / Pakeitimai / Изменения](https://github.com/Blakiukas/BlakiBridge/releases) · [SHA256](https://github.com/Blakiukas/BlakiBridge/releases/download/untagged-79c2d0bc459b26e6e25c/SHA256SUMS.txt)
+
+> Private preview: these downloads belong to the unpublished 1.0.3 draft and require repository access.
+
+![BlakiBridge](01-layout.png)
 
 BlakiBridge makes smooth mouse pointer transitions between monitors of different heights and resolutions as simple and automatic as possible. It takes monitor size, layout and physical gaps into account.
 
@@ -39,86 +45,25 @@ Portable settings and diagnostics are stored in the adjacent `Data` folder. Keep
 
 If an app running as administrator opens on a secondary monitor at Windows startup and remains active, correction may not work until you click an empty area of the main monitor's desktop. This is a Windows security restriction.
 
-## Lietuvių
+## Screenshots
 
-„BlakiBridge“ skirta kuo paprasčiau ir automatiškiau užtikrinti sklandų pelės kursoriaus perėjimą tarp skirtingo aukščio ir raiškos monitorių. Programa atsižvelgia į monitorių dydį, išdėstymą ir fizinius tarpus.
+<details>
+<summary>Screenshots (4)</summary>
 
-Programą sukūriau savo trijų monitorių sistemai, nes neradau patogios alternatyvos. Tai mano pirmoji programa, sukurta naudojant „Codex“.
-
-### Kurį variantą rinktis?
-
-- **Microsoft Store:** diegimas ir atnaujinimai per parduotuvę.
-- **Setup.exe:** diegimas jūsų „Windows“ paskyrai, aplanko ir nuorodų pasirinkimas, pasirenkamas paleidimas kartu su „Windows“.
-- **Portable ZIP:** išskleiskite visą ZIP į aplanką, kuriame galite rašyti, ir paleiskite `BlakiBridge.exe`. Diegti nereikia; automatinis paleidimas su „Windows“ šiame variante neprieinamas.
-
-Atsisiunčiami variantai turi reikalingą vykdymo aplinką. Setup failas nepasirašytas patikimu leidėjo sertifikatu, todėl „Windows“ gali parodyti nežinomo leidėjo arba „SmartScreen“ įspėjimą. Store paketas platinamas per „Microsoft“ pasirašymo procesą.
-
-### Pradžia
-
-1. Įjunkite programą.
-2. Išdėstykite monitorių atvaizdus pagal savo darbo vietą. Tempkite atvaizdą, o dydį keiskite apatiniu dešiniu kampu.
-3. Įjunkite reguliavimą ir sulygiuokite spalvotų linijų galus ekranų kraštuose. Kiekviena monitorių pora turi savo spalvą.
-4. Užbaikite reguliavimą. Nustatymai išsaugomi automatiškai, o uždarius langą programa lieka sistemos dėkle.
-
-Pasirinkę ekraną galite keisti matmenis, pelės greitį ir fizinį tarpą. Greičio optimizavimas ir fizinių tarpų korekcija yra pasirenkami.
-
-**Jei kursorius juda neteisingai: Ctrl + Alt + F12.** Vienu metu naudokite tik vieną pelės korekcijos programą. Prieš paleisdami kitą „BlakiBridge“ kopiją, ankstesnę uždarykite per sistemos dėklo meniu.
-
-Portable nustatymai ir diagnostika saugomi šalia programos esančiame `Data` aplanke. Atnaujindami išsaugokite `Data` ir `portable.flag`. Norėdami pašalinti portable versiją su jos duomenimis, uždarykite ją ir ištrinkite išskleistą aplanką.
-
-Jei paleidus „Windows“ papildomame monitoriuje lieka aktyvi administratoriaus teisėmis veikianti programa, korekcija gali neveikti, kol nespustelėsite tuščios pagrindinio monitoriaus darbalaukio vietos. Tai „Windows“ saugos apribojimas.
-
-## Русский
-
-BlakiBridge упрощает и автоматизирует плавный переход курсора мыши между мониторами разной высоты и разрешения. Программа учитывает размеры мониторов, их расположение и физические зазоры.
-
-Я создал BlakiBridge для своей системы из трёх мониторов, поскольку не нашёл удобной альтернативы. Это моя первая программа, созданная с помощью Codex.
-
-### Какую версию выбрать?
-
-- **Microsoft Store:** установка и обновления через магазин.
-- **Setup.exe:** установка для вашей учётной записи Windows, выбор папки и ярлыков, необязательный автозапуск.
-- **Portable ZIP:** распакуйте весь архив в папку с правом записи и запустите `BlakiBridge.exe`. Установка не нужна; автозапуск Windows в портативной версии недоступен.
-
-Необходимая среда выполнения включена в загрузки. Setup не подписан доверенным сертификатом издателя, поэтому Windows может показать предупреждение о неизвестном издателе или SmartScreen. Пакет Microsoft Store распространяется через процесс подписи Microsoft.
-
-### Начало работы
-
-1. Включите программу.
-2. Расположите изображения мониторов так же, как на вашем столе. Перетаскивайте их для перемещения; тяните за нижний правый угол для изменения размера.
-3. Включите настройку переходов и совместите концы цветных линий на краях экранов. У каждой пары мониторов свой цвет.
-4. Завершите настройку. Параметры сохраняются автоматически. После закрытия окна программа продолжает работать в системном трее.
-
-Выберите экран для настройки размеров, скорости мыши или физического зазора. Оптимизация скорости и учёт зазоров необязательны.
-
-**Если курсор движется неправильно: Ctrl + Alt + F12.** Используйте только одну программу коррекции мыши одновременно. Перед запуском другой копии BlakiBridge закройте предыдущую через меню значка в трее.
-
-Настройки и диагностика portable сохраняются в соседней папке `Data`. При обновлении сохраните `Data` и `portable.flag`. Чтобы удалить portable вместе с её данными, закройте программу и удалите распакованную папку.
-
-Если при запуске Windows на дополнительном мониторе остаётся активной программа с правами администратора, коррекция может не работать до щелчка по пустому месту рабочего стола основного монитора. Это ограничение безопасности Windows.
-
-## Screenshots / Nuotraukos / Скриншоты
-
-### How to use / Instrukcija / Инструкция
 ![How to use BlakiBridge](02-guide.png)
 
-### Mouse speed / Pelės greitis / Скорость мыши
-![Mouse speed settings](03-speed.png)
+![Mouse speed](03-speed.png)
 
-### Physical gap / Fizinis tarpas / Физический зазор
-![Physical gap settings](04-gap.png)
+![Physical gap](04-gap.png)
 
-### About / Apie / О программе
 ![About BlakiBridge](05-about.png)
 
-## Support / Pagalba / Поддержка
+</details>
+
+## Support
 
 [blaki.support@gmail.com](mailto:blaki.support@gmail.com)
 
-Free to use. This repository contains downloads and documentation; program source code is not included.
-
-Programa nemokama. Šioje saugykloje pateikiami platinimo failai ir dokumentacija; programos šaltinio kodas nepridedamas.
-
-Программа бесплатна. Репозиторий содержит загрузки и документацию; исходный код программы не включён.
+Free to use. Program source code is not included.
 
 © 2026 Blakiukas
