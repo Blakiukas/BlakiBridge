@@ -6,13 +6,13 @@
 
 **Бесплатная программа для Windows · Windows 10 (2004+) / Windows 11 · x64 · EN / LT / RU**
 
-## Скачать
+## Download
 
-**[Скачать Setup (.exe)](https://github.com/Blakiukas/BlakiBridge/releases/download/untagged-79c2d0bc459b26e6e25c/BlakiBridge-1.0.3-Setup.exe)** · **[Скачать Portable (.zip)](https://github.com/Blakiukas/BlakiBridge/releases/download/untagged-79c2d0bc459b26e6e25c/BlakiBridge-1.0.3-Portable-x64.zip)** · **[Microsoft Store](https://apps.microsoft.com/detail/9NL5F77NL75W)**
+**[Download Setup (.exe)](https://github.com/Blakiukas/BlakiBridge/releases/download/untagged-5e5b1ce0c222ee37971e/BlakiBridge-1.0.3-Setup.exe)** · **[Download Portable (.zip)](https://github.com/Blakiukas/BlakiBridge/releases/download/untagged-5e5b1ce0c222ee37971e/BlakiBridge-1.0.3-Portable-x64.zip)** · **[Microsoft Store](https://apps.microsoft.com/detail/9NL5F77NL75W)**
 
-[1.0.3 · Release notes / Pakeitimai / Изменения](https://github.com/Blakiukas/BlakiBridge/releases) · [SHA256](https://github.com/Blakiukas/BlakiBridge/releases/download/untagged-79c2d0bc459b26e6e25c/SHA256SUMS.txt)
+[1.0.3 · Release notes](https://github.com/Blakiukas/BlakiBridge/releases) · [SHA256](https://github.com/Blakiukas/BlakiBridge/releases/download/untagged-5e5b1ce0c222ee37971e/SHA256SUMS.txt)
 
-> Закрытый просмотр: загрузки относятся к неопубликованному черновику 1.0.3 и доступны только участникам репозитория.
+> Private preview: these downloads belong to the unpublished 1.0.3 draft and require repository access.
 
 ![BlakiBridge](01-layout.png)
 
