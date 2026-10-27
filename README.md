@@ -13,7 +13,7 @@ Smooth mouse pointer transitions between monitors of different sizes and resolut
 [1.0.3 · Release notes](https://github.com/Blakiukas/BlakiBridge/releases) · [SHA256](https://github.com/Blakiukas/BlakiBridge/releases/download/v1.0.3/SHA256SUMS.txt)
 
 
-![BlakiBridge](01-layout.png)
+![BlakiBridge](00-cover.png)
 
 BlakiBridge makes smooth mouse pointer transitions between monitors of different heights and resolutions as simple and automatic as possible. It takes monitor size, layout and physical gaps into account.
 
@@ -47,7 +47,9 @@ If an app running as administrator opens on a secondary monitor at Windows start
 ## Screenshots
 
 <details>
-<summary>Screenshots (4)</summary>
+<summary>Screenshots (5)</summary>
+
+![BlakiBridge](01-layout.png)
 
 ![How to use BlakiBridge](02-guide.png)
 

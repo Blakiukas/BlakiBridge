@@ -13,7 +13,7 @@ Sklandus pelės kursoriaus perėjimas tarp skirtingo dydžio ir raiškos monitor
 [1.0.3 · Release notes](https://github.com/Blakiukas/BlakiBridge/releases) · [SHA256](https://github.com/Blakiukas/BlakiBridge/releases/download/v1.0.3/SHA256SUMS.txt)
 
 
-![BlakiBridge](01-layout.png)
+![BlakiBridge](00-cover.png)
 
 „BlakiBridge“ skirta kuo paprasčiau ir automatiškiau užtikrinti sklandų pelės kursoriaus perėjimą tarp skirtingo aukščio ir raiškos monitorių. Programa atsižvelgia į monitorių dydį, išdėstymą ir fizinius tarpus.
 
@@ -45,7 +45,9 @@ Jei paleidus „Windows“ papildomame monitoriuje lieka aktyvi administratoriau
 ## Nuotraukos
 
 <details>
-<summary>Nuotraukos (4)</summary>
+<summary>Nuotraukos (5)</summary>
+
+![BlakiBridge](01-layout.png)
 
 ![How to use BlakiBridge](02-guide.png)
 

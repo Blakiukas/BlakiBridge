@@ -13,7 +13,7 @@
 [1.0.3 · Release notes](https://github.com/Blakiukas/BlakiBridge/releases) · [SHA256](https://github.com/Blakiukas/BlakiBridge/releases/download/v1.0.3/SHA256SUMS.txt)
 
 
-![BlakiBridge](01-layout.png)
+![BlakiBridge](00-cover.png)
 
 BlakiBridge упрощает и автоматизирует плавный переход курсора мыши между мониторами разной высоты и разрешения. Программа учитывает размеры мониторов, их расположение и физические зазоры.
 
@@ -45,7 +45,9 @@ BlakiBridge упрощает и автоматизирует плавный пе
 ## Скриншоты
 
 <details>
-<summary>Скриншоты (4)</summary>
+<summary>Скриншоты (5)</summary>
+
+![BlakiBridge](01-layout.png)
 
 ![How to use BlakiBridge](02-guide.png)
 
