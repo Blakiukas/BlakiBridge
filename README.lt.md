@@ -2,7 +2,7 @@
 
 [English](README.md) | [Lietuvių](README.lt.md) | [Русский](README.ru.md)
 
-Sklandus pelės kursoriaus perėjimas tarp skirtingo dydžio ir raiškos monitorių.
+Teisingas pelės kursoriaus perėjimas tarp skirtingo aukščio ir raiškos monitorių.
 
 **Nemokama Windows programa · Windows 10 (2004+) / Windows 11 · x64 · EN / LT / RU**
 
@@ -15,7 +15,7 @@ Sklandus pelės kursoriaus perėjimas tarp skirtingo dydžio ir raiškos monitor
 
 ![BlakiBridge](00-cover.png)
 
-„BlakiBridge“ skirta kuo paprasčiau ir automatiškiau užtikrinti sklandų pelės kursoriaus perėjimą tarp skirtingo aukščio ir raiškos monitorių. Programa atsižvelgia į monitorių dydį, išdėstymą ir fizinius tarpus.
+Programa skirta maksimaliai supaprastinti ir automatizuoti teisingą pelės kursoriaus perėjimą tarp skirtingo aukščio ir raiškos monitorių. Programa atsižvelgia į monitorių dydį, išdėstymą ir fizinius tarpus.
 
 Programą sukūriau savo trijų monitorių sistemai, nes neradau patogios alternatyvos. Tai mano pirmoji programa, sukurta naudojant „Codex“.
 

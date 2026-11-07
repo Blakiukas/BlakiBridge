@@ -2,7 +2,7 @@
 
 [English](README.md) | [Lietuvių](README.lt.md) | [Русский](README.ru.md)
 
-Smooth mouse pointer transitions between monitors of different sizes and resolutions.
+Correct mouse pointer transitions between monitors of different heights and resolutions.
 
 **Free Windows app · Windows 10 (2004+) / Windows 11 · x64 · EN / LT / RU**
 
@@ -15,7 +15,7 @@ Smooth mouse pointer transitions between monitors of different sizes and resolut
 
 ![BlakiBridge](00-cover.png)
 
-BlakiBridge makes smooth mouse pointer transitions between monitors of different heights and resolutions as simple and automatic as possible. It takes monitor size, layout and physical gaps into account.
+BlakiBridge is designed to make correct mouse pointer transitions between monitors of different heights and resolutions as simple and automatic as possible. It takes monitor size, layout and physical gaps into account.
 
 I created BlakiBridge for my own three-monitor setup because I could not find a convenient alternative. This is my first program, created using Codex.
 
