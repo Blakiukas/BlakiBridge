@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+ xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+ xmlns:uap5="http://schemas.microsoft.com/appx/manifest/uap/windows10/5"
+ xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+ IgnorableNamespaces="uap uap5 rescap">
+ <Identity Name="__IDENTITY_NAME__" Publisher="__PUBLISHER__" Version="1.0.0.0" ProcessorArchitecture="x64" />
+ <Properties><DisplayName>BlakiBridge</DisplayName><PublisherDisplayName>__PUBLISHER_DISPLAY_NAME__</PublisherDisplayName><Logo>Assets\StoreLogo.png</Logo></Properties>
+ <Dependencies><TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.19041.0" MaxVersionTested="10.0.26100.0" /></Dependencies>
+ <Resources><Resource Language="en-US"/><Resource Language="lt-LT"/><Resource Language="ru-RU"/></Resources>
+ <Applications>
+  <Application Id="App" Executable="BlakiBridge.exe" EntryPoint="Windows.FullTrustApplication">
+   <uap:VisualElements DisplayName="BlakiBridge" Description="Correct mouse pointer transitions between monitors" BackgroundColor="#0C151A" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" />
+   <Extensions>
+    <uap5:Extension Category="windows.startupTask" Executable="BlakiBridge.Startup.exe" EntryPoint="Windows.FullTrustApplication">
+     <uap5:StartupTask TaskId="BlakiBridgeStartup" Enabled="false" DisplayName="BlakiBridge" />
+    </uap5:Extension>
+   </Extensions>
+  </Application>
+ </Applications>
+ <Capabilities><rescap:Capability Name="runFullTrust" /></Capabilities>
+</Package>
