@@ -1,0 +1,54 @@
+name: Bug report
+description: Report a problem with BlakiBridge.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please check existing issues before reporting a new problem.
+        Remove personal information from screenshots and logs, including usernames, private file paths, monitor identifiers, and unrelated process names.
+  - type: input
+    id: app-version
+    attributes:
+      label: BlakiBridge version
+      description: Include the version and installation type (Microsoft Store, Setup, portable, or your own build).
+      placeholder: "1.0.4, Setup"
+    validations:
+      required: true
+  - type: input
+    id: windows-version
+    attributes:
+      label: Windows version
+      placeholder: "Windows 11, version 25H2"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Explain what you did, including your monitor arrangement and whether mouse speed or physical gap correction was enabled when relevant.
+      placeholder: |
+        1. Open ...
+        2. Move the pointer ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should happen?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What happened instead? Include any error message.
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Screenshots or logs (optional)
+      description: Attach only relevant information after removing private data. You do not need to share your full configuration or diagnostic log.
