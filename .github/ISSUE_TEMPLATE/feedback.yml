@@ -1,0 +1,21 @@
+name: Feedback or suggestion
+description: Share feedback or suggest an improvement to BlakiBridge.
+title: "[Feedback]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please check existing issues before adding a suggestion.
+        Use the bug report form for behavior that does not work as expected.
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Feedback or suggestion
+      description: Describe your idea and the problem or use case it would help with.
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context (optional)
+      description: Add examples or screenshots if useful. Remove private information before sharing.
