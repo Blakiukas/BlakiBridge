@@ -1,0 +1,29 @@
+# Build and packaging output
+**/bin/
+**/obj/
+artifacts/
+packaging/Setup/payload/
+packaging/Setup/dist/
+
+# Local IDE settings
+.vs/
+*.user
+*.suo
+
+# User settings and local diagnostic evidence
+**/Data/
+**/diagnostics/
+config.json
+config.json.bak
+test-settings.json*
+events.jsonl*
+*.log
+
+# Local credentials and signing material
+.env
+.env.*
+*.pfx
+*.p12
+*.key
+*.pem
+*.snk

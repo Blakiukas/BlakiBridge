@@ -8,9 +8,9 @@ Correct mouse pointer transitions between monitors of different heights and reso
 
 ## Download
 
-**[Download Setup (.exe)](https://github.com/Blakiukas/BlakiBridge/releases/download/v1.0.3/BlakiBridge-1.0.3-Setup.exe)** · **[Download Portable (.zip)](https://github.com/Blakiukas/BlakiBridge/releases/download/v1.0.3/BlakiBridge-1.0.3-Portable-x64.zip)** · **[Microsoft Store](https://apps.microsoft.com/detail/9NL5F77NL75W)**
+**[Download Setup (.exe)](https://github.com/Blakiukas/BlakiBridge/releases/download/v1.0.4/BlakiBridge-1.0.4-Setup.exe)** · **[Download Portable (.zip)](https://github.com/Blakiukas/BlakiBridge/releases/download/v1.0.4/BlakiBridge-1.0.4-Portable-x64.zip)** · **[Microsoft Store](https://apps.microsoft.com/detail/9NL5F77NL75W)**
 
-[1.0.3 · Release notes](https://github.com/Blakiukas/BlakiBridge/releases) · [SHA256](https://github.com/Blakiukas/BlakiBridge/releases/download/v1.0.3/SHA256SUMS.txt)
+[1.0.4 · Release notes](https://github.com/Blakiukas/BlakiBridge/releases/tag/v1.0.4) · [Source ZIP](https://github.com/Blakiukas/BlakiBridge/releases/download/v1.0.4/BlakiBridge-1.0.4-Source.zip) · [SHA256](https://github.com/Blakiukas/BlakiBridge/releases/download/v1.0.4/SHA256SUMS.txt)
 
 
 ![BlakiBridge](00-cover.png)
@@ -65,7 +65,7 @@ If an app running as administrator opens on a secondary monitor at Windows start
 
 [blaki.support@gmail.com](mailto:blaki.support@gmail.com)
 
-Free to use. Program source code is not included.
+Open source under the [MIT License](LICENSE.txt). Use, modification, redistribution and sale are permitted under that license.
 
 © 2026 Blakiukas
 

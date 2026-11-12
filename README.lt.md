@@ -8,9 +8,9 @@ Teisingas pelės kursoriaus perėjimas tarp skirtingo aukščio ir raiškos moni
 
 ## Download
 
-**[Download Setup (.exe)](https://github.com/Blakiukas/BlakiBridge/releases/download/v1.0.3/BlakiBridge-1.0.3-Setup.exe)** · **[Download Portable (.zip)](https://github.com/Blakiukas/BlakiBridge/releases/download/v1.0.3/BlakiBridge-1.0.3-Portable-x64.zip)** · **[Microsoft Store](https://apps.microsoft.com/detail/9NL5F77NL75W)**
+**[Download Setup (.exe)](https://github.com/Blakiukas/BlakiBridge/releases/download/v1.0.4/BlakiBridge-1.0.4-Setup.exe)** · **[Download Portable (.zip)](https://github.com/Blakiukas/BlakiBridge/releases/download/v1.0.4/BlakiBridge-1.0.4-Portable-x64.zip)** · **[Microsoft Store](https://apps.microsoft.com/detail/9NL5F77NL75W)**
 
-[1.0.3 · Release notes](https://github.com/Blakiukas/BlakiBridge/releases) · [SHA256](https://github.com/Blakiukas/BlakiBridge/releases/download/v1.0.3/SHA256SUMS.txt)
+[1.0.4 · Release notes](https://github.com/Blakiukas/BlakiBridge/releases/tag/v1.0.4) · [Source ZIP](https://github.com/Blakiukas/BlakiBridge/releases/download/v1.0.4/BlakiBridge-1.0.4-Source.zip) · [SHA256](https://github.com/Blakiukas/BlakiBridge/releases/download/v1.0.4/SHA256SUMS.txt)
 
 
 ![BlakiBridge](00-cover.png)
@@ -63,7 +63,7 @@ Jei paleidus „Windows“ papildomame monitoriuje lieka aktyvi administratoriau
 
 [blaki.support@gmail.com](mailto:blaki.support@gmail.com)
 
-Programa nemokama. Programos šaltinio kodas nepridedamas.
+Atviro kodo programa pagal [MIT licenciją](LICENSE.txt). Pagal ją leidžiama programą naudoti, keisti, platinti ir parduoti.
 
 © 2026 Blakiukas
 

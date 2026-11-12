@@ -1,6 +1,6 @@
 # BlakiBridge privacy information
 
-Updated: 25 October 2026 · Applies to BlakiBridge 1.0.3
+Updated: 12 November 2026 · Applies to BlakiBridge 1.0.4
 
 ## English
 

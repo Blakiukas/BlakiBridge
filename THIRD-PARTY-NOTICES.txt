@@ -1,6 +1,6 @@
-BlakiBridge 1.0.3 — third-party software
+BlakiBridge 1.0.4 — third-party software
 
-BlakiBridge's freeware license applies to BlakiBridge's own code, not to
+BlakiBridge's MIT License applies to BlakiBridge's own code, not to
 independently licensed components. Those components retain their own
 permissions, notices, warranty disclaimers and copyright holders.
 
@@ -26,5 +26,5 @@ Inno Setup 6.7.3 (Setup distribution only)
   Used to create the installer; its existing embedded notices are retained.
 
 No additional direct NuGet PackageReference dependencies are declared by
-BlakiBridge 1.0.3. Windows APIs and operating-system components are supplied
+BlakiBridge 1.0.4. Windows APIs and operating-system components are supplied
 by Windows and are not relicensed by BlakiBridge.
