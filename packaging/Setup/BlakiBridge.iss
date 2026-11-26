@@ -1,4 +1,4 @@
-#define AppVersion "1.0.4"
+#define AppVersion "1.0.5"
 [Setup]
 AppId=BlakiBridge
 AppName=BlakiBridge
@@ -13,7 +13,7 @@ ArchitecturesAllowed=x64compatible
 ArchitecturesInstallIn64BitMode=x64compatible
 MinVersion=10.0.17763
 OutputDir=dist
-OutputBaseFilename=BlakiBridge-1.0.4-Setup
+OutputBaseFilename=BlakiBridge-1.0.5-Setup
 SetupIconFile=..\..\src\BlakiBridge\BlakiBridge.ico
 WizardSmallImageFile=ikoblaki.png
 UninstallDisplayIcon={app}\BlakiBridge.exe

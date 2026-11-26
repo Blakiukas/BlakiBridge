@@ -10,6 +10,6 @@ This folder contains the Inno Setup script, its Lithuanian translation and the s
 ISCC.exe .\BlakiBridge.iss
 ```
 
-The resulting installer is written to `dist/BlakiBridge-1.0.4-Setup.exe` under this folder. The script uses relative project paths and includes EN, LT and RU installer languages. Inno Setup's own license is included at the repository root; review the compiler's terms for your version.
+The resulting installer is written to `dist/BlakiBridge-1.0.5-Setup.exe` under this folder. The script uses relative project paths and includes EN, LT and RU installer languages. Inno Setup's own license is included at the repository root; review the compiler's terms for your version.
 
 The installer supports per-user installation, optional shortcuts/startup and optional copying of existing Store settings. Its Store-settings path identifies the official BlakiBridge package. Adapt product identity, names and settings migration before distributing a renamed derivative. Review and test installation/uninstallation on an appropriate test system before distributing your build.
