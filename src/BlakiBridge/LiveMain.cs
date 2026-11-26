@@ -472,7 +472,24 @@ public sealed partial class LiveMain : ThemedForm
     {
         markers?.Dispose(); markers = null;
         var previous=config.Transitions;
-        config.Connections ??= MonitorTopology.Suggest(canvas);
+        var suggested = MonitorTopology.Suggest(canvas);
+        var oldAutomatic = config.AutomaticConnections ?? MonitorTopology.LegacySuggestions(canvas);
+        var stored = config.Connections;
+        config.DisabledConnections ??= new();
+        if (stored != null && config.AutomaticConnections == null)
+            config.DisabledConnections.AddRange(oldAutomatic.Where(a => !stored.Any(l => MonitorTopology.SameLink(a,l))).Select(a => a.Copy()));
+        var manual = (stored ?? []).Where(l => !oldAutomatic.Any(a => MonitorTopology.SameLink(a,l)));
+        var active = manual.Concat(suggested.Where(s => !config.DisabledConnections.Any(d => MonitorTopology.SameLink(d,s))))
+            .DistinctBy(l => GapSettings.Key(l.A,l.B)).ToList();
+        config.AutomaticConnections = suggested.Select(l => l.Copy()).ToList();
+        var bounds = monitors.ToDictionary(m => m.DeviceName, canvas.DiagramBounds);
+        float Distance(MonitorLink link)
+        {
+            if (!bounds.TryGetValue(link.A, out var a) || !bounds.TryGetValue(link.B, out var b)) return float.MaxValue;
+            return link.Side switch { Edge.Right => b.Left-a.Right, Edge.Left => a.Left-b.Right,
+                Edge.Bottom => b.Top-a.Bottom, _ => a.Top-b.Bottom };
+        }
+        config.Connections = active.OrderBy(Distance).ThenBy(l => GapSettings.Key(l.A,l.B), StringComparer.Ordinal).ToList();
         var calibration=MonitorIdentity.Calibration(config,monitors).ToArray();
         var safeLinks=config.Connections.Where(link=>new[]{link.A,link.B}.All(name=>
             monitors.Any(m=>m.DeviceName==name && (!config.MonitorIdentities.TryGetValue(name,out var identity)
@@ -511,15 +528,25 @@ public sealed partial class LiveMain : ThemedForm
             if (dialog.DialogResult == DialogResult.OK)
             {
                 config.MouseSpeedPercent[monitor.DeviceName] = dialog.SpeedPercent;
-                if(dialog.ConnectionsDraft is {} draft){config.Connections=draft.Links;config.Gaps=draft.Gaps;RebuildMaps();ApplyEngine();}
+                if(dialog.ConnectionsDraft is {} draft)
+                {
+                    foreach (var automatic in config.AutomaticConnections ?? [])
+                    {
+                        config.DisabledConnections.RemoveAll(d => MonitorTopology.SameLink(d,automatic));
+                        if (!draft.Links.Any(l => MonitorTopology.SameLink(l,automatic)))
+                            config.DisabledConnections.Add(automatic.Copy());
+                    }
+                    config.Connections=draft.Links;
+                    config.Gaps=draft.Gaps;
+                }
                 if (dialog.MeasurementsChanged)
                 {
                     config.Measurements[monitor.DeviceName] = dialog.Result;
                     canvas.Measurements[monitor.DeviceName] = dialog.Result;
                     canvas.ManualWidths.Remove(monitor.DeviceName); config.DiagramWidths.Remove(monitor.DeviceName);
-                    canvas.Invalidate(); ApplyEngine();
+                    canvas.Invalidate();
                 }
-                Save();
+                RebuildMaps(); ApplyEngine(); Save();
             }
             footerBand.Controls.Remove(dialog.ActionBar); dialog.Controls.Add(dialog.ActionBar);
             workspace.Controls.Remove(dialog); dialog.Dispose();

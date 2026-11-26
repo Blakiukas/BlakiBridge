@@ -16,6 +16,7 @@ internal static class MonitorRename
         foreach(var t in c.Transitions){t.A=Name(t.A);t.B=Name(t.B);}
         foreach(var t in c.SavedTransitions){t.A=Name(t.A);t.B=Name(t.B);}
         if(c.Connections!=null)foreach(var link in c.Connections){link.A=Name(link.A);link.B=Name(link.B);}
+        foreach(var link in (c.AutomaticConnections ?? []).Concat(c.DisabledConnections ?? [])){link.A=Name(link.A);link.B=Name(link.B);}
         var gaps=c.Gaps.ToArray();c.Gaps.Clear();
         foreach(var pair in gaps.OrderBy(k=>k.Key.Split('|').Any(map.ContainsKey))){var parts=pair.Key.Split('|');c.Gaps[parts.Length==2?GapSettings.Key(Name(parts[0]),Name(parts[1])):pair.Key]=pair.Value;}
     }

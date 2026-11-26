@@ -10,6 +10,39 @@ internal static class MonitorTopology
 {
     internal static List<MonitorLink> Suggest(MonitorCanvas canvas)
     {
+        var screens = canvas.Monitors.Select(m => (m.DeviceName, Bounds: canvas.DiagramBounds(m))).ToArray();
+        var links = new Dictionary<string, MonitorLink>();
+        foreach (bool horizontal in new[] { true, false })
+        {
+            float Start(RectangleF r) => horizontal ? r.Top : r.Left;
+            float End(RectangleF r) => horizontal ? r.Bottom : r.Right;
+            var cuts = screens.SelectMany(s => new[] { Start(s.Bounds), End(s.Bounds) }).Distinct().Order().ToArray();
+            // Consecutive screens in each strip can see each other across the gap.
+            for (int i = 1; i < cuts.Length; i++)
+            {
+                var row = screens.Where(s => Start(s.Bounds) < cuts[i] && End(s.Bounds) > cuts[i-1])
+                    .OrderBy(s => horizontal ? s.Bounds.Left : s.Bounds.Top).ThenBy(s => s.DeviceName, StringComparer.Ordinal).ToArray();
+                for (int j = 1; j < row.Length; j++)
+                {
+                    var a = row[j-1];
+                    var b = row[j];
+                    float gap = horizontal ? b.Bounds.Left-a.Bounds.Right : b.Bounds.Top-a.Bounds.Bottom;
+                    if (gap < -1) continue;
+                    links.TryAdd(GapSettings.Key(a.DeviceName,b.DeviceName), new MonitorLink {
+                        A=a.DeviceName, B=b.DeviceName, Side=horizontal ? Edge.Right : Edge.Bottom
+                    });
+                }
+            }
+        }
+        return links.Values.ToList();
+    }
+
+    internal static bool SameLink(MonitorLink a, MonitorLink b) =>
+        (a.A == b.A && a.B == b.B && a.Side == b.Side) ||
+        (a.A == b.B && a.B == b.A && a.Side == Transition.Opposite(b.Side));
+
+    internal static List<MonitorLink> LegacySuggestions(MonitorCanvas canvas)
+    {
         var result=new List<MonitorLink>();
         foreach(var a in canvas.Monitors)
         {

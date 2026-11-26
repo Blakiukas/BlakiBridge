@@ -116,6 +116,23 @@ internal sealed class MouseBridge : IDisposable
             _ => new Point(t.Left + mapped, t.Top + 1)
         };
     }
+    internal static Route? SelectRoute(List<Route> routes, Point from, Point to, out Point? point)
+    {
+        Route? fallback = null;
+        point = null;
+        foreach (var route in routes)
+        {
+            if (MapMove(route, from, to) is not Point candidate) continue;
+            if (route.Target.Contains(candidate))
+            {
+                point = candidate;
+                return route;
+            }
+            if (fallback == null) { fallback = route; point = candidate; }
+        }
+        return fallback;
+    }
+
     private IntPtr OnMouse(int code, IntPtr message, IntPtr data)
     {
         if (code >= 0 && message == (IntPtr)0x200 && warping && BridgeTrace.Detailed && traceWindow.Active && BridgeTrace.TakeDetailedSample())
@@ -185,17 +202,14 @@ internal sealed class MouseBridge : IDisposable
                         manual * DesktopSpeedFactor(SpeedFactor(current.Bounds.Height, (decimal)size.Height, primary.Bounds.Height, (decimal)reference.Height), current.DpiY, primary.DpiY, windowsPointerPrecision), ref remainderX, ref remainderY);
                 }
                 Point? destinationPoint = null;
-                foreach (var route in routes)
+                selectedRoute = SelectRoute(routes, previous, position, out mappedPoint);
+                if (selectedRoute != null && mappedPoint is Point point)
                 {
-                    var target = MapMove(route, previous, position);
-                    if (target is not Point point) continue;
-                    selectedRoute = route; mappedPoint = point;
-                    destinationPoint = Compensate(route, point, position);
-                    if (route.Target.Contains(destinationPoint.Value))
+                    destinationPoint = Compensate(selectedRoute, point, position);
+                    if (selectedRoute.Target.Contains(destinationPoint.Value))
                     {
                         remainderX = 0; remainderY = 0;
                     }
-                    break;
                 }
                 if (destinationPoint is null && pendingGap is not null)
                 {

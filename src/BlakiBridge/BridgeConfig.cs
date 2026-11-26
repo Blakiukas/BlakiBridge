@@ -20,6 +20,8 @@ public sealed class BridgeConfig
     public Dictionary<string, float> DiagramWidths { get; set; } = new();
     public Dictionary<string, PointF> DiagramPositions { get; set; } = new();
     public List<MonitorLink>? Connections { get; set; }
+    public List<MonitorLink>? AutomaticConnections { get; set; }
+    public List<MonitorLink> DisabledConnections { get; set; } = new();
     public bool TopologyReviewRequired { get; set; }
     public List<Transition> Transitions { get; set; } = new();
     public Dictionary<string, string> MonitorIdentities { get; set; } = new();
