@@ -8,7 +8,7 @@ Run these commands from the repository root:
 
 ```powershell
 dotnet publish .\src\BlakiBridge\BlakiBridge.csproj -c Release -r win-x64 --self-contained true --source https://api.nuget.org/v3/index.json -p:StoreBuild=true -p:DebugType=None -p:DebugSymbols=false -o .\artifacts\store\payload
-dotnet publish .\packaging\StoreStartup\BlakiBridge.Startup.csproj -c Release -r win-x64 --self-contained true --source https://api.nuget.org/v3/index.json -p:Version=1.0.4 -p:AssemblyVersion=1.0.4.0 -p:FileVersion=1.0.4.0 -p:DebugType=None -p:DebugSymbols=false -o .\artifacts\store\startup
+dotnet publish .\packaging\StoreStartup\BlakiBridge.Startup.csproj -c Release -r win-x64 --self-contained true --source https://api.nuget.org/v3/index.json -p:Version=1.0.5 -p:AssemblyVersion=1.0.5.0 -p:FileVersion=1.0.5.0 -p:DebugType=None -p:DebugSymbols=false -o .\artifacts\store\startup
 Get-ChildItem .\artifacts\store\startup\BlakiBridge.Startup.* | Copy-Item -Destination .\artifacts\store\payload
 ```
 
@@ -36,7 +36,7 @@ Save the completed manifest as `artifacts/store/payload/AppxManifest.xml`. Use t
 # Run from a shell where the Windows SDK x64 tools are on PATH.
 # Replace Your.Package.Name with the identity used in your completed manifest.
 makepri new /pr .\artifacts\store\payload /cf .\packaging\StoreStartup\priconfig.xml /in Your.Package.Name /of .\artifacts\store\payload\resources.pri /o
-makeappx pack /d .\artifacts\store\payload /p .\artifacts\store\BlakiBridge-1.0.4-x64.msix /o
+makeappx pack /d .\artifacts\store\payload /p .\artifacts\store\BlakiBridge-1.0.5-x64.msix /o
 ```
 
 This creates an unsigned MSIX. Local installation requires an appropriate signing/trust setup. Store submission and certification are separate from compilation and packaging. No signing credentials, certificate files or private Partner Center data are included in this repository.
