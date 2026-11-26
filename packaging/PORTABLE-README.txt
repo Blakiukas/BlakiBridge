@@ -1,4 +1,4 @@
-BlakiBridge 1.0.4 - Windows x64 portable
+BlakiBridge 1.0.5 - Windows x64 portable
 
 EN
 Extract the ENTIRE ZIP to a writable folder and run BlakiBridge.exe.
