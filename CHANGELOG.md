@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.5 — 2026-11-26
+
+BlakiBridge now detects horizontal and vertical crossings across gaps in your monitor layout. Multiple monitors can share one edge. The pointer chooses the calibrated interval at the crossing position. Open Adjust to review the detected pairs.
+
 ## 1.0.4 — 2026-11-12
 
 - Fixed an incorrect cursor jump after mouse input was interrupted and resumed on another monitor, including a case that could move a window unexpectedly.
@@ -19,3 +23,4 @@ The fix does not remove Windows input restrictions when an application with high
 Close the running copy through its tray menu before updating. Existing settings and diagnostics should be preserved.
 
 Microsoft Store updates are published after Microsoft's certification process.
+

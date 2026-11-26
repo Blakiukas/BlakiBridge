@@ -24,7 +24,7 @@ To create a standalone x64 folder that includes the runtime:
 dotnet publish .\src\BlakiBridge\BlakiBridge.csproj -c Release -r win-x64 --self-contained true --source https://api.nuget.org/v3/index.json -p:DebugType=None -p:DebugSymbols=false -o .\artifacts\desktop
 ```
 
-Official 1.0.4 packages were prepared with the .NET 10.0.10 runtime. SDK and runtime patch differences can change the resulting files; a local rebuild is not expected to have the same checksums as the official downloads.
+Official 1.0.5 packages were prepared with the .NET 10.0.10 runtime. SDK and runtime patch differences can change the resulting files; a local rebuild is not expected to have the same checksums as the official downloads.
 
 For redistribution, include `LICENSE.txt`, `PRIVACY.md`, `THIRD-PARTY-NOTICES.txt`, and the six component license/notice files from the repository root. If you build with a different runtime version, review and include that version's original license and notice files.
 

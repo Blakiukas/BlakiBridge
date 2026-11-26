@@ -8,9 +8,9 @@
 
 ## Download
 
-**[Download Setup (.exe)](https://github.com/Blakiukas/BlakiBridge/releases/download/v1.0.4/BlakiBridge-1.0.4-Setup.exe)** · **[Download Portable (.zip)](https://github.com/Blakiukas/BlakiBridge/releases/download/v1.0.4/BlakiBridge-1.0.4-Portable-x64.zip)** · **[Microsoft Store](https://apps.microsoft.com/detail/9NL5F77NL75W)**
+**[Download Setup (.exe)](https://github.com/Blakiukas/BlakiBridge/releases/download/v1.0.5/BlakiBridge-1.0.5-Setup.exe)** · **[Download Portable (.zip)](https://github.com/Blakiukas/BlakiBridge/releases/download/v1.0.5/BlakiBridge-1.0.5-Portable-x64.zip)** · **[Microsoft Store](https://apps.microsoft.com/detail/9NL5F77NL75W)**
 
-[1.0.4 · Release notes](https://github.com/Blakiukas/BlakiBridge/releases/tag/v1.0.4) · [Source ZIP](https://github.com/Blakiukas/BlakiBridge/releases/download/v1.0.4/BlakiBridge-1.0.4-Source.zip) · [SHA256](https://github.com/Blakiukas/BlakiBridge/releases/download/v1.0.4/SHA256SUMS.txt)
+[1.0.5 · Release notes](https://github.com/Blakiukas/BlakiBridge/releases/tag/v1.0.5) · [Source ZIP](https://github.com/Blakiukas/BlakiBridge/releases/download/v1.0.5/BlakiBridge-1.0.5-Source.zip) · [SHA256](https://github.com/Blakiukas/BlakiBridge/releases/download/v1.0.5/SHA256SUMS.txt)
 
 
 ![BlakiBridge](00-cover.png)
